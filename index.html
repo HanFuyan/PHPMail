@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>PHPMail</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<style>
+			body {
+				background-color: #EEE;
+			}
+			hr {
+				border: 1px solid #CCC;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="container-fluid">
+			<div class="row">
+				<br />
+				<h1 class="col-md-offset-1">PHP-Mail邮件发送系统<small>—支持附件与群发</small></h1>
+				<hr />
+				
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<br />
+					<form>
+						<div class="row form-group">
+							<div class="col-sm-3 form-group">
+								<input type="text" class="form-control" placeholder="STMP服务器">
+							</div>
+							<div class="col-sm-2 form-group">
+								<input type="text" class="form-control" placeholder="端口">
+							</div>
+							<div class="checkbox col-sm-1 form-group">
+								<label>
+									<input type="checkbox" value=""> 认证
+								</label>
+							</div>
+							<div class="col-sm-3 form-group">
+								<input type="text" class="form-control" placeholder="用户名">
+							</div>
+							<div class="col-sm-3 form-group">
+								<input type="password" class="form-control" placeholder="密码">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">收件人：</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="收件人">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">主题：</label>
+							<input type="text" class="form-control" id="exampleInputText" placeholder="主题">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputFile">附件</label>
+							<input type="file" id="exampleInputFile">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputTextarea">内容</label>
+							<textarea class="form-control" rows="5" placeholder="请输入内容……"></textarea>
+						</div>
+						<button type="submit" class="btn btn-info col-sm-2">Submit</button>
+
+						<button type="reset" class="btn btn-warning col-sm-2 col-sm-offset-1">Reset</button>
+					</form>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+
+</html>
+\ No newline at end of file
